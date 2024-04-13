@@ -1,0 +1,21 @@
+{
+  "name": "backend-expert",
+  "version": "1.0.0",
+  "description": "My Backend Working Experience - Self Learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Javascript",
+    "Backend",
+    "Node",
+    "Js",
+    "Express",
+    "Js",
+    "MongoDB",
+    "Mongoose"
+  ],
+  "author": "Ali Hassan",
+  "license": "ISC"
+}
