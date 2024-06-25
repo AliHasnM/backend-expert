@@ -20,7 +20,13 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 // Serve static files from the "public" directory (e.g., images, PDFs, icons)
 app.use(express.static("public"));
 // Parse cookies attached to the client requests
-app.use(express.cookieParser());
+app.use(cookieParser());
+
+// Routes import
+import userRouter from "./controllers/user.controller.js"; // Correct path to the user router file
+
+// Routes declaration
+app.use("/api/v1/users", userRouter);
 
 // Export the configured Express app instance
 export default app;
