@@ -62,7 +62,7 @@ userSchema.pre("save", async function (next) {
   // this reference k leye hai. isModified("string me hi value deni hoti hai") ye predefined function hai
   if (!this.isModified("password")) return next();
   // bcrypt k pass hash(passwordReference, NumberOfRound) function hota hai jis se password ko hash krta hai
-  this.password = bcrypt.hash(this.password, 10);
+  this.password = await bcrypt.hash(this.password, 10);
   next();
 }); // best method
 
